@@ -1,0 +1,122 @@
+\documentclass{assignment}
+\usepackage[pdftex]{graphicx}
+\usepackage{xcolor}
+\definecolor{LightGray}{gray}{0.95}
+\usepackage{fancyvrb, minted}
+\usepackage[letterpaper, margin = 2.5cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{hyperref, url} 
+\usepackage{fancyhdr}
+
+\newcommand{\R}{\mathbb{R}}
+
+
+\student{Bowen Weng}   
+\semester{Spring 2024}                         
+\date{}  
+
+\courselabel{COM S 474/574} 
+\exercisesheet{HW1}{Maths Prerequisites}
+
+\school{Department of Computer Science}
+\university{Iowa State University}
+
+\begin{document}
+
+%-----------------------------------------------------------------------------------------------
+\begin{problem}
+This homework covers the prerequisites of COM S 474/574 given for Spring 2024 at Iowa State University. It is due before the Thursday class on Feb 2nd 2024.
+
+\section{Calculus}
+
+\subsection{Numbers}
+Give True/False for the following claims:
+\begin{enumerate}
+    \item $\frac{5}{3}$ is a rational.
+    \item $\sqrt{3}$ is a rational.
+    \item $-4$ is an integer.
+    \item $-4$ is a natural number.
+    \item $-4$ is a real number.
+\end{enumerate}
+
+\subsection{Limits}
+\begin{enumerate}
+    \item $\lim_{x\rightarrow +\infty} \frac{1}{x} =$ 
+    \item $\lim_{x\rightarrow8} \frac{2x^2-17x+8}{8-x} =$
+    \item $\lim_{x\rightarrow4} \frac{\sqrt{x}-2}{x-4} = $
+\end{enumerate}
+
+\subsection{Integrals}
+\noindent Find the following integrals
+\begin{enumerate}
+    \item $\int (2x^2 + 6x^9) dx = $
+\end{enumerate}
+
+\subsection{Derivatives}
+\noindent Calculate $\frac{df(x)}{dx}$ for the following functions ($f(x)$'s).
+\begin{enumerate}
+    \item $f(x) = 2x^2 + 6x^9$
+    \item $f(x) = \sqrt{x^4 + 1}$
+    \item $f(x) = x \sin{(5x)}$
+    \item $f(x) = \frac{e^x}{x^2}$
+\end{enumerate}
+\newpage
+\section{Linear Algebra}
+\noindent Please include your calculation steps whenever applicable.
+
+\subsection{Notations}
+\begin{enumerate}
+    \item $\mathbf{I}_3$ = 
+    \item Rewrite the equation in the linear algebra form:
+    \begin{equation}
+        \begin{cases}
+        3x + 5y = 1 \\
+        2x - y = 0   
+        \end{cases} 
+    \end{equation}
+    \item Let $A = \mathbf{I}_9$, what is $a_{11}$? What is $a_{51}$?
+    
+\end{enumerate}
+
+\subsection{Multiplications}
+\noindent Computer the following multiplications (note: not every question is valid):
+\begin{enumerate}
+    \item $\begin{bmatrix}a & b\end{bmatrix} \begin{bmatrix}c \\ d\end{bmatrix} = $
+    \item $\begin{bmatrix}a \\ b\end{bmatrix} \begin{bmatrix}c & d\end{bmatrix} = $
+    \item $\begin{bmatrix}a & b \\ c & d\end{bmatrix} \begin{bmatrix}e & f \\ g & h\end{bmatrix} = $
+    \item $\begin{bmatrix}a & b \\ c & d\end{bmatrix} \begin{bmatrix}e & f\end{bmatrix} = $
+    \item $\begin{bmatrix}a & b \\ c & d\end{bmatrix} \begin{bmatrix}e \\ f\end{bmatrix} = $
+\end{enumerate}
+
+\subsection{Other Operations}
+\noindent Unless specified otherwise, let $A, B \in \R^{n\times n}$.
+\begin{enumerate}
+    \item $\mathbf{I}_3^T$ =
+    \item $(AB)^T = $
+    \item $(a^TB)^T = $
+    \item $AA^{-1}$ = 
+    \item Let $A =\begin{bmatrix} 0 & 2 \\ 1 & 3 \end{bmatrix}$, what is $A^{-1}$?
+    \item Let $x = \begin{bmatrix} 0 & 2 & 1 & 3 \end{bmatrix}^T$, what is $\lVert x \rVert_2$? What is $\lVert x \rVert_{\infty}$? What is $\lVert x \rVert_1$? What is $\lVert x^T \rVert_2$?
+    \item $\lvert \mathbf{I}_{2}\rvert (\text{det}(\mathbf{I}_2)) = $
+    \item $\lvert \mathbf{I}_{1024}\rvert = $
+\end{enumerate}
+\newpage
+\section{Probability}
+
+\begin{enumerate}
+    \item Consider the data set $x = \{1, 2, 3, 4, 5, 6, 77, 88, 999\}$. What is the mean of $x$? What is the median of $x$? What is the standard deviation of $x$?
+    \item If you were to roll the dice one time, 
+    \begin{itemize}
+        \item what is the probability it will land on a 1?
+        \item what is the probability it will not land on a 1?
+    \end{itemize}
+    \item (\textbf{The Monty Hall Problem}) You are presented with three doors, A, B, and C. Behind one door is a valuable prize (like a car), while behind the other two doors, there are less desirable items (like goats). The location of the prize is unknown to you. Suppose you choose one of the three doors (let's say A). Your selection is not opened immediately. Monty, who knows what's behind each door, opens one of the other two doors (let's say C), that reveals a goat (never the car). After Monty reveals a goat behind C, you are given a choice: stick with your original selection (A) or switch to the other unopened door (B). Which decision has a higher chance to win (the car)? Why?
+\end{enumerate}
+
+\section{A ``Bonus" Question (1 pt)}
+\noindent From a scale of 1 to 5, how difficult is HW1? 1 is ``I can do it in my sleep". 5 is ``Bowen is ridiculous". 0 is ``I refuse to answer this question". This is for my own reference to improve the quality of future assignments. Thanks!
+    
+\end{problem}
+
+\end{document}
